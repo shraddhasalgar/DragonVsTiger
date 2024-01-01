@@ -1,0 +1,3 @@
+rootProject.name='tweentyfourseven'
+include ':app'
+include ':upiPay'

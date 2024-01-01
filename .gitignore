@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/upiPay/build/
+/upiPay/build/intermediates/javac/debug/classes/

@@ -1,0 +1,20 @@
+package com.dragon.multigame;
+
+public enum GAMES {
+    TEENPATTI,
+    DRAGON_TIGER,
+    ANDHAR_BAHAR,
+    POINT_RUMMY,
+    PRIVATE_RUMMY,
+    POOL_RUMMY,
+    DEAL_RUMMY,
+    PRIVATE_TABLE,
+    CUSTOM_TABLE,
+    SEVEN_UP_DOWN,
+    CAR_ROULETTE,
+    JACKPOT_3PATTI,
+    ANIMAL_ROULETTE,
+    COLOUR_PREDICTION,
+    POKER_GAME,
+    HEAD_TAIL,
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rltDetails" type="id" />
+    <item name="img_edit" type="id" />
+    <item name="tvEditProfile" type="id" />
+    <item name="lnr_userinfo" type="id" />
+    <item name="Headingfiled1" type="id" />
+    <item name="txt_diaName" type="id" />
+    <item name="Headingfiled2" type="id" />
+    <item name="Headingfiled3" type="id" />
+    <item name="Headingfiled4" type="id" />
+    <item name="txt_bank" type="id" />
+    <item name="Headingfiled5" type="id" />
+    <item name="txt_adhar" type="id" />
+    <item name="lnr_updateuser" type="id" />
+    <item name="edtUsername" type="id" />
+    <item name="edtUserupi" type="id" />
+    <item name="edtUserbank" type="id" />
+    <item name="edtUseradhar" type="id" />
+    <item name="imgsub" type="id" />
+    <item name="tez" type="id" />
+</resources>

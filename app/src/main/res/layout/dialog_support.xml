@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/d_top_corner_curve_white"
+    android:padding="16dp">
+
+    <!-- Support Dialog Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Support"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Support Dialog Message -->
+    <TextView
+        android:id="@+id/dialog_support_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How can we assist you?"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- User's Question Input -->
+    <EditText
+        android:id="@+id/question_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your question"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18sp"
+
+        android:textColor="#fff"
+        android:background="@drawable/btn_yellow_discard" />
+</LinearLayout>

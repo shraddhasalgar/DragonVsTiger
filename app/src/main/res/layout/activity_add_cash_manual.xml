@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/dialogParentStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Add_Cash_Manual">
+<!--    Download QR code-->
+
+    <ImageView
+        android:id="@+id/imgback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_below="@+id/imgback"
+                android:id="@+id/qrcodeimg1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"/>
+
+            <Button
+
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:background="@color/blue_light"
+                android:id="@+id/downloadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qrcodeimg1"
+                android:text=" Download qr code " />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/qrcodeimg1"
+                android:text=" Send Money on above QR Code or UPI ID once Completed Click Below whatsaap No and Send Screenshot \n Click On Number"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                android:id="@+id/textviewr1"
+                android:layout_marginStart="@dimen/dp40"
+                android:layout_marginEnd="@dimen/dp40"
+                android:textStyle="bold"
+                android:layout_height="@dimen/dimen_40dp"/>
+        </LinearLayout>
+        <TextView
+            android:background="@color/red"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"/>
+
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/abc"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".........">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/copy"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_content_copy_24"/>
+
+    </LinearLayout>
+</RelativeLayout>

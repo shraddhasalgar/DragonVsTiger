@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_buydetails_bg"
+    tools:context=".Activity.Splashscreen">
+<!--activity_chips_details-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/zz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/imgback"
+            android:text="Please download QR or copy upi for payment.\n Once payment done pelase add screenshot and click on paynow "
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
+        <LinearLayout
+            android:id="@+id/aaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zz"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/qrcodeimg1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_below="@+id/imgback"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_marginRight="@dimen/dimen_20dp" />
+
+            <Button
+                android:id="@+id/downloadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/qrcodeimg1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:background="@color/blue_light"
+                android:text=" Download qr code "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textviewr1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_below="@+id/qrcodeimg1"
+                android:layout_marginStart="@dimen/dp40"
+                android:layout_marginEnd="@dimen/dp40"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text=" Send Money on above QR Code or UPI ID once Completed Click Below whatsaap No and Send Screenshot \n Click On Number"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <!--        <TextView-->
+        <!--            android:background="@color/red"-->
+        <!--            android:textSize="23sp"-->
+        <!--            android:textColor="@color/white"-->
+
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="OR"/>-->
+
+        <TextView
+            android:id="@+id/dddd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/red"
+            android:gravity="center"
+            android:layout_marginTop="440dp"
+            android:text="OR"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/zzzzzz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dddd"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/abc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textSize="15dp"></TextView>
+
+            <ImageView
+                android:id="@+id/copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_baseline_content_copy_24"
+                android:textIsSelectable="true" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/selectedImage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/zzzzzz"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="Description for accessibility" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectedImage"
+            android:layout_centerInParent="true"
+            android:text="Select Image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectImageButton"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtChipsdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Hello World!"
+                android:textColor="@color/colordullwhite"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgPaynow"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/paynow" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
